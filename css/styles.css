@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    font-size: 1rem;
+    font-family: "Montserrat",  sans-serif;
+    /* font-family: "Open Sans",  sans-serif; */
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav-bg-color.scrolled{
+    /* background: #257A3D; */
+    box-shadow: 0px 2px 20px 0px #333;
+}
+.rounded-10{
+    border-radius: 10px!important;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.mt-7{
+    margin-top: 7rem!important;
+}
+.btn-pill{
+    padding: .5rem 2rem!important;
+    border-radius: 20px!important;
+    font-weight: bold!important;
+}
+.smallText{
+    font-size: .8em;
+    color: hsl(0, 0%, 60%);
+    font-weight: 600;
+}
+.smallText-md{
+    font-size: 1em;
+    color: hsl(0, 0%, 45%);
+    font-weight: 600;
+}
+
+.btn-learnMore{
+    color: #257A3D!important;
+    transition: .7s!important;
+}
+.btn-learnMore:hover{
+    color: #fff!important;
+    background-color: #257A3D!important;
+}
+.features + .features{
+    margin-top: 2rem;
+}
+.features{
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.features_icon{
+    background:  #20743A;
+    color: #fff;
+    padding: .7rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+}
+.section_green{
+    background: hsl(132,40%,40%);
+}
+.fs-1-5{
+    font-size: 1.5rem;
+}
+.rounded-10{
+    border-radius: 10px;
+}
+.counters{
+    counter-reset: sayac;
+}
+.section{
+    position: relative;
+}
+.section::before{
+    counter-increment: sayac;
+    content: counter(sayac) '  ';
+    position: absolute;
+    left: -1em;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.Contactus_bg{
+    background: hsl(132,51%,34%);
+    padding: 6rem 5rem!important;
+}
+.fa-exclamation-circle{
+    font-size: 2rem;
+    margin-right: .5rem;
+    display: inline-flex;
+    color: hsl(132,51%,34%);
+}
+footer{
+    margin: auto auto 15rem auto !important;
+}
