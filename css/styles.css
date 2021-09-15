@@ -115,3 +115,6 @@ html{
 footer{
     margin: auto auto 15rem auto !important;
 }
+button{
+    font-size: clamp( .7rem, 2.5vw, 1em)!important; 
+}
